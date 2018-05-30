@@ -13,7 +13,7 @@ void rotate(int* nums, int numsSize, int k) {
     if (!k || k == numsSize) {
         return;
     }
-    int offset = k > numsSize ? k - numsSize : k;
+    int offset = k % numsSize;
     for (int i = 0; i < offset; i ++) {
         int temp = nums[numsSize - 1];
         for (int j = numsSize - 1; j > 0; j --) {
