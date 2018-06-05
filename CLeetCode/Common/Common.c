@@ -15,3 +15,9 @@ void printArray(int *arr, int arrLen) {
     }
     printf("\n");
 }
+
+void swapInt(int *x, int *y) {
+    *x = *x + *y;
+    *y = *x - *y;
+    *x = *x - *y;
+}

@@ -11,5 +11,7 @@
 
 void printArray(int *arr, int arrLen);
 
+void swapInt(int *x, int *y);
+
 
 #endif /* Common_h */
